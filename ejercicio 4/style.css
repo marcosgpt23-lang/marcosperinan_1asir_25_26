@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+div {
+    background-color: #ffffe6;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 400px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 300px;
+}
+
+
+#septiembre p {
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    border-top: 1px solid black;
+    margin: 0 auto;
+    width: 300px;
+    padding-top: 5px;
+    margin-bottom: 0;
+}
+
+#septiembre tr {
+    border-bottom: 1px solid black;
+}
+
+#septiembre td {
+    text-align: right;
+    padding: 3px 5px;
+}
+
+#septiembre .diasSemana td {
+    font-weight: bold;
+    text-align: center;
+}
+
+#octubre p {
+    font-weight: bold;
+    text-align: right;
+    margin: 0 auto;
+    width: 300px;
+}
+
+#octubre table {}
+
+#octubre td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: right;
+    padding: 5px 8px;
+}
+
+#octubre .diasSemana td {
+    font-weight: bold;
+    text-align: center;
+}
+
+#noviembre p {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    margin: 0 auto;
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+#noviembre table {
+    border: 1px solid black;
+}
+
+#noviembre td {
+    border: 1px solid black;
+    width: 42px;
+    height: 42px;
+    vertical-align: top;
+    text-align: left;
+    padding: 3px;
+}
+
+#noviembre tr.diasSemana td {
+    height: auto;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+}

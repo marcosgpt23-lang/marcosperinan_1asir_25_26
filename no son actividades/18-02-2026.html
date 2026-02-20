@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Guardar en un array el nombre de una ciudad y los litros de lluvia caido cada dia de la semana, se pide obtener la media de litros caidos (En {ciudad} ha caido {media}L de agua) y decir en que día de la semana ha llovido más (Hacerlo con funciones todo)
+        let lluvia = ["Madrid", 98, 350, 76, 56, 200, 100, 50];
+        let dias_semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+
+        function media(valores) {
+            let resultado = 0;
+            for (let valor of valores) {
+                resultado += valor;
+            }
+            return (resultado / valores.length).toFixed(2);
+        }
+        function diaMasLluvioso(valores) {
+            let maximo = 0;
+            let dia = 0;
+            for (let i = 0; i < valores.length; i++) {
+                if (valores[i] > maximo) {
+                    maximo = valores[i];
+                    dia = i;
+                }
+            }
+            return dias_semana[dia];
+        }
+        function main() {
+            document.write(`En ${lluvia[0]} la media de lluvia ha sido ${media(lluvia.slice(1))}L de agua <br>`)
+            document.write(`El día que más ha llovido ha sido ${diaMasLluvioso(lluvia.slice(1))}`)
+        }
+        main();
+    </script>
+</head>
+
+</html>

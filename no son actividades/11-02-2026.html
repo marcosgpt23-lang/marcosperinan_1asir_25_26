@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<!--
+    <script>
+        /*Dada las 3 notas de un alumno, visualizar si su media está aprobada o suspensa*/
+        let nota1 = Number(prompt("Introduce la primera nota"));
+        let nota2 = Number(prompt("Introduce la segunda nota"));
+        let nota3 = Number(prompt("Introduce la tercera nota"));
+
+        function calcularMedia(nota1, nota2, nota3) {
+            return (nota1 + nota2 + nota3) / 3;
+        }
+
+        function estaAprobado(nota) {
+            if (nota >= 5) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function main() {
+            let media = calcularMedia(nota1, nota2, nota3);
+            if (estaAprobado(media)) {
+                document.write("El alumno está aprobado -> " + media.toFixed(2));
+            } else {
+                document.write("El alumno está suspenso -> " + media.toFixed(2));
+            }
+        }
+
+        main();
+
+
+    </script>
+    -->
+    <script>
+        /*Declarar un array con el nombre de un alumno y sus 3 notas. Visualiza el nombre y la media del alumno*/
+        let matNotas = [
+            ["Marcos", 6, 0, 7],
+            ["Ana", 8, 7, 9],
+            ["Luis", 5, 6, 2]
+        ];
+
+        function calcularMedia(arrayNotas) {
+            let suma = 0;
+            for (let i = 1; i < arrayNotas.length; i++) {
+                suma += arrayNotas[i];
+            }
+            return suma / (arrayNotas.length - 1);
+        }
+
+        function verTodasLasNotas(arrayAlumnos){
+            for (let i = 0; i < arrayAlumnos.length; i++) {
+                document.write("El alumno " + arrayAlumnos[i][0] + " tiene una media de " + calcularMedia(arrayAlumnos[i]).toFixed(2) + ". ");
+                if (calcularMedia(arrayAlumnos[i]) >= 5){
+                    document.write("Está aprobado.<br>");
+                }else{
+                    document.write("Está suspenso.<br>");
+                }
+            }
+        }
+
+        function main() {
+            verTodasLasNotas(matNotas);
+        }
+
+        main();
+    </script>
+
+</body>
+
+</html>
