@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/*
+ Dado una nota de un alumno y su nombre y a continuacion dada otra nota y nombre de otro alumno. Averiguar el nombre del alumno con mayor nota o el mensaje "iguales" si ambas notas son iguales.
+*/
+  var nota1, nombre1, nota2, nombre2;
+  // datos del primer alumno
+  nota1=prompt('Ingrese la nota del primer alumno:','');  
+  nota1=parseInt(nota1);
+  nombre1=prompt('Ingrese el nombre del primer alumno:','');  
+
+  // datos del segundo alumno
+  nota2=prompt('Ingrese la nota del segundo alumno:','');  
+  nota2=parseInt(nota2);
+  nombre2=prompt('Ingrese el nombre del segundo alumno:',''); 
+  
+  resul = Proceso (nota1, nombre1, nota2, nombre2);
+  Visualizar (resul);
+  
+  // ------ funciones -----------------------------
+  function Proceso (nota1, nombre1, nota2, nombre2){
+      if (nota1 == nota2){
+          resul = "IGUALES";
+      } else {
+          if (nota1 > nota2){
+              resul = nombre1;
+          } else{
+              resul = nombre2;
+          }
+      }
+      return resul;
+  }
+  function Visualizar (resul){
+      alert ("Resultado: "+resul);
+  }
+  
+  
+  
+  
+ 
+
+  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/*
+10.-) Declarar una frase, obtener cuantos espacios contiene.
+*/
+
+  var frase="Hoy es viernes 3 de Abril", resul;
+
+  resul = Proceso (frase);
+ 
+  Visualizar (resul);
+   
+  
+  // ---------------- FUNCIONES --------------------
+
+function Proceso (frase){
+    var  i, conta=0;
+    for (i=0; i < frase.length; i++){
+       if (frase[i] == " "){
+          conta++;
+       }
+    }
+    return conta;
+}
+
+function Visualizar (resul){
+   alert ("numero de espacios: "+resul);
+    
+}
+
+  
+</script>
+
+</body>
+</html>

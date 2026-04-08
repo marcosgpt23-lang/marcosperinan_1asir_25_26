@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/*
+ pasar los valores negativos de un array a otro array. VISUALIZAR EL SEGUNDO ARRAY.
+
+*/
+
+  var tab1=[1,2,3,4,5,-3,-5, 7, -99];
+
+ tab2 = Negativos (tab1);
+  Visualizar (tab2);
+
+
+  // ---------------- FUNCIONES --------------------
+  function Negativos (tab1){
+      var conta=0, tab2=[];
+      for (i=0; i < tab1.length; i++){
+          if (tab1[i] < 0) {
+
+               tab2[conta] = tab1[i];
+               conta++;
+         }
+      }
+      return tab2;
+ 
+  }
+  function Visualizar (tab2){
+      for (i=0; i < tab2.length; i++){
+        alert (tab2[i]);
+      }
+      }
+
+
+
+</script>

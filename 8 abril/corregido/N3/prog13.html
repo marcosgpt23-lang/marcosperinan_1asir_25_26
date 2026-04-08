@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/*
+ Dado un array con 10 valores obtener cuántos valores negativos
+
+*/
+
+  var tab1=[1,2,-3,4,5,6,-7,8,9,-10];
+
+  resul = Negativos (tab1);
+  Visualizar (resul);
+
+
+  // ---------------- FUNCIONES --------------------
+  function Negativos (tab1){
+      conta=0;
+      for (i=0; i < tab1.length; i++){
+          if (tab1[i]<0) {
+
+          conta= conta + 1;
+         }
+      }
+      return conta;
+ 
+  }
+  function Visualizar (resul){
+        alert ('Hay '+resul+' negativos');
+      }
+
+
+
+</script>
+
+</body>
+</html>

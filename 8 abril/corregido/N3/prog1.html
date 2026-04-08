@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/*
+1.-) Dado un array con 6 valores numéricos, obtener:
+	a) cuantos valores numéricos son mayores de 100
+	b) cuantos mayores de 500
+	c) cuantos mayores de 2000
+
+*/
+
+  var tab=[10,2000,3000,400,50,6000];
+
+  resul1= Mayoresde100 (tab);
+  resul2= Mayoresde500 (tab);
+  resul3= Mayoresde2000 (tab);
+  Visualizar (resul1, resul2, resul3);
+   
+  
+  // ---------------- FUNCIONES --------------------
+  function Mayoresde100 (tab){
+      var  i, conta=0;
+      for (i=0; i < tab.length; i++){
+          if (tab[i] > 100){
+              conta++;
+          }
+      }
+      return conta;
+  }
+ function Mayoresde500 (tab){
+      var  i, conta=0;
+      for (i=0; i < tab.length; i++){
+          if (tab[i] > 500){
+              conta++;
+          }
+      }
+      return conta;
+  }
+  function Mayoresde2000 (tab){
+      var  i, conta=0;
+      for (i=0; i < tab.length; i++){
+          if (tab[i] > 2000){
+              conta++;
+          }
+      }
+      return conta;
+  }
+
+  function Visualizar (resul1, resul2, resul3){
+      alert ("Mayores de 100: "+resul1);
+      alert ("Mayores de 500: "+resul2);
+      alert ("Mayores de 2000: "+resul3);
+  }
+</script>
+
+</body>
+</html>

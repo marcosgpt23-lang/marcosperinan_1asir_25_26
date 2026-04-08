@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/*
+7.-) Declarar un carácter y a continuación una frase. Visualizar cuantas veces se encuentra el carácter en la frase. 
+*/
+
+  var frase = "Hoy es viernes 3 de Abril", caracter='e';
+
+  resul= Proceso (frase, caracter);
+ 
+  Visualizar (resul);
+   
+  
+  // ---------------- FUNCIONES --------------------
+
+function Proceso (frase, caracter){
+    var  i, conta=0;
+    for (i=0; i < frase.length; i++){
+        if (frase[i] == caracter){
+           conta++;
+        }
+    }
+    return conta;
+}
+
+function Visualizar (resul){
+    alert (resul+" veces");
+}
+
+  
+</script>
+
+</body>
+</html>

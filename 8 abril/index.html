@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+</head>
+<body>
+    <script>
+        /*
+        Declarar un array con las notas de un alumno, contar cuantos aprobados tiene
+        Media de las notas aprobadas
+        */
+
+        let notas = [5, 5, 1, 2, 4, 5, 5, 5, 2, 5]
+        let aprobados = 0
+        let suma = 0
+        
+        function contarAprobados(notas){
+            for (let i = 0; i < notas.length; i++){
+                if (notas[i] >= 5){
+                    aprobados++
+                }
+            }
+            return aprobados
+        }
+
+        function mediaAprobados(notas){
+            for (let i = 0; i < notas.length; i++){
+                if (notas[i] >= 5){
+                    suma += notas[i]
+                }
+            }
+            let media = suma / aprobados
+            return media
+        }
+
+        function main(){
+            document.write("El alumno tiene " + contarAprobados(notas) + " aprobados<br>")
+            document.write("La media de las notas aprobadas es " + mediaAprobados(notas))
+        }
+
+        main()
+    </script>
+</body>
+</html>

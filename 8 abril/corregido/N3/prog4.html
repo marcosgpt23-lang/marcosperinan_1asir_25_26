@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/*
+4. Dado un array con 8 valores numéricos:
+	a) Visualizar cuantos valores son múltiplos de 2 y 3    
+
+
+*/
+
+  var tab=[10,20,30,40,50,60,70, 90], resul;
+
+  resul= Proceso (tab)
+ 
+ Visualizar (resul);
+   
+  
+  // ---------------- FUNCIONES --------------------
+
+function Proceso (tab){
+    var conta=0;
+    for (i=0; i < tab.length; i++){
+        if (tab[i] % 2 == 0 && tab[i] % 3 == 0){
+           conta++;
+        }
+    }
+    return conta;
+}
+function Visualizar (resul){
+    alert ("cantidad de valores multiplos de 2 y 3: "+resul);
+}
+
+  
+</script>
+
+</body>
+</html>

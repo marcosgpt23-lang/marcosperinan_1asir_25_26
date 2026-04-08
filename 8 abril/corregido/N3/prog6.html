@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/*
+ Declarar una frase. Visualizar cuantos caracteres numéricos y cuantos alfabéticos contiene.
+
+*/
+
+  var frase="Hoy es miercoles 1 de Abril", resul1, resul2;
+
+  resul1 = Cuenta1(frase);
+  resul2 = Cuenta2(frase);
+  Visualizar (resul1, resul2);
+   
+  
+  // ---------------- FUNCIONES --------------------
+  function Cuenta1 (frase){
+      var conta1=0, i;
+    for (i=0; i < frase.length; i++){
+        if (frase[i]>='0' && frase[i] <= '9'){
+            conta1++;
+        } 
+    }
+    return conta1;
+    
+  }
+  
+  function Cuenta2 (frase){
+      var conta2=0, i;
+    for (i=0; i < frase.length; i++){
+        if (frase[i]>='a' && frase[i] <= 'z' || frase[i]>='A' && frase[i] <= 'Z'){
+            conta2++;
+        } 
+    }
+    return conta2;
+  }
+  function Visualizar (resul1, resul2){
+      alert ("Numero de caracteres numericos: "+resul1);
+      alert ("Numero de caracteres alfabeticos: "+resul2);
+      
+  }
+
+  
+</script>
+
+</body>
+</html>

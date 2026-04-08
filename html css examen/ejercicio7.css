@@ -1,0 +1,45 @@
+body {
+}
+
+#cabecera {
+    display: flex;
+}
+
+#logo h1 span{
+    color: orange;
+}
+
+#buscador {
+    position: absolute;
+    right: 0;
+}
+
+#menu_principal{
+    display: flex;
+    background-color: blue;
+}
+
+#menu_principal a{
+    text-decoration: none;
+    padding-left: 10px;
+    color: white;
+}
+
+#lateral{
+    width: 200px;
+}
+
+#noticias {
+    background-color: rgb(206, 206, 206);
+    width: 100%;
+    border: solid gray 2px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#publicidad {
+    background-color: rgb(248, 248, 131);
+    width: 100%;
+    padding: 5px;
+    border:dashed orange 2px;
+}
