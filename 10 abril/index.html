@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 de abril</title>
+<!--
+    <script>
+        //Declarar un array con una serie de valores, y visualizar si en ese array se encuentra el valor -99
+
+        let valores = [1, 4, -99]
+        let valorABuscar = -99
+
+        function buscarValor(array, buscar){
+            let existe = false
+            valores.forEach(valor => {
+                if (valor == buscar){
+                    existe = true
+                }
+            });
+            return existe
+        }
+
+        function main(){
+            if (buscarValor(valores, valorABuscar) == true){
+                document.write("Existe el valor " + valorABuscar)
+            } else {
+                document.write("No existe el valor " + valorABuscar)
+            }
+        }
+
+        main()
+    </script>
+-->
+<!--
+    <script>
+        // Visualizar números a partir del 10 hasta que se encuentre un valor múltiplo del 7
+        
+        function main(){
+            let i = 10
+            while (true){
+                document.write(i + " ")
+                if (i%7 == 0){
+                    break
+                }
+                i++
+            }
+        }
+
+        main()
+    </script>
+-->
+    <script>
+        //Declarar un array con nota y visualizar las notas aprobadas
+
+        let notas = [4, 5, 6, 1]
+
+        function main(){
+            let i = 0
+            while (true){
+                if (notas[i] >= 5){
+                    console.log(notas[i])
+                }
+                if (i == notas.length){
+                    break
+                }
+                i++
+            }
+        }
+
+        function main2(){
+            notas.forEach(nota => {
+                if (nota >= 5){
+                    console.log(nota)
+                }
+            });
+        }
+
+        main()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
