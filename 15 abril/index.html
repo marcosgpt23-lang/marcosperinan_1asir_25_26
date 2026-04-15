@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Pedir notas hasta que el valor sea -99, en el momento que sea -99, visualizar la media de las notas introducidas        
+        function calcularMedia(){
+            let notas = 0, nota, contador = 0, media, sw = 0
+            
+            while (sw == 0){
+                nota = parseInt(prompt("Ingresa una nota"))
+                if (nota == -99){
+                    sw = 1
+                } else {
+                    notas += nota
+                    contador++
+                }
+            }
+            media = notas/contador
+            return media
+        }
+
+        function main(dato){
+            document.write("La media de las notas es -> ", dato)
+        }
+
+        main(calcularMedia())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
