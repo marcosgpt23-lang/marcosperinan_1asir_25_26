@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Se piden notas de forma repetida al usuario hasta que el usuario digite -99, en ese momento visualizr las notas introducidas
+        function guardarNotas(){
+            let tab_notas = [], nota, contador = 0, media, sw = 0
+            
+            while (sw == 0){
+                nota = parseInt(prompt("Ingresa una nota"))
+                if (nota == -99){
+                    sw = 1
+                } else {
+                    tab_notas.push(nota)
+                }
+            }
+            return tab_notas
+        }
+
+        function main(dato){
+            document.write("Las notas son -> ", dato)
+        }
+
+        main(guardarNotas())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

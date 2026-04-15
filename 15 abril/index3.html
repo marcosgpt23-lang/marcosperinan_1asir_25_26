@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // declarar un array con números enteros y ver si el array está ordenado ascendentemente para devolver true, utilizar switch
+        let tab_numeros = []
+
+        function verOrden(array){
+            let tab_numeros = [1, 2, 3, 4, 5, 6, 10, 11]
+            let sw = 0
+            let i = 1
+            let ordenadoAscend = true
+            while (sw == 0){
+                if (tab_numeros.length == i){
+                    sw = 1
+                } else {
+                    if (tab_numeros[i-1] > tab_numeros[i]){
+                        sw = 1
+                        ordenadoAscend = false
+                    }
+                    i++
+                }
+                
+            }
+            return ordenadoAscend
+        }
+
+        function main(){
+            document.write("¿Está ordenada ascendentemente? -> " + verOrden())
+        }
+
+        main()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
