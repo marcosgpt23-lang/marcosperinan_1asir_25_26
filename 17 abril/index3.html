@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Pedir números repetidamente hasta acertar una clave numérica, por cada número introducido no acertado, se le dará al usuario un mensaje como pista para decirle si el número introducido el mayor o menor que la clave secreta. Una vez acertado el número, visualizar las ocasiones que ha necesitado para acertarlo
+        let secreto = 123
+
+
+        function adivinar(secreto){
+            let sw = 0, i = 0, valor = 0
+            while (sw == 0){
+                valor = parseInt(prompt("Adivina la clave: "))
+                if (valor == secreto){
+                    sw = 1
+                } else if (valor > secreto){
+                    alert("El valor es mayor que el número secreto")
+                } else {
+                    alert("El valor es menor que el número secreto")
+                }
+                i++
+            }
+            return i
+        }
+
+        function main(){
+            document.write("Enhorabuena, has adivinado el número secreto (", secreto, ") en ", adivinar(), " intentos")
+        }
+
+        main()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

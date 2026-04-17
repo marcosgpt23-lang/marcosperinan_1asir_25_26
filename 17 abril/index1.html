@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Pedir datos numericos repetidamente al usuario hasta que se digite -99, visualizar el valor mayor
+
+        function mayor(){
+            let sw = 0
+            let i = 0
+            let mayor = 0
+            let valor = 0
+            while (sw == 0) {
+                valor = parseInt(prompt("Introduce un número (-99 para salir)"))
+                console.log(valor)
+                if (i == 0){
+                    mayor = valor
+                    i++
+                } else {
+                    if (valor == -99){
+                        sw = 1
+                    }
+                    else if (valor > mayor){
+                        mayor = valor
+                    }
+                }
+            }
+            return mayor
+        }
+
+        function main(){
+            document.write("Mayor -> ", mayor())
+        }
+
+        main()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

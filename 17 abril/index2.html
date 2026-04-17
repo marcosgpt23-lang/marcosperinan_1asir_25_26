@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Pedir números repetidamente hasta que el valor que se introduzca sea menor que el anterior, cuando pare, visualizar cuantos números han sido tecleados y cuales
+
+        function proceso(){
+            let sw = 0, i = 0
+            let valores = []
+
+            while (sw == 0) {
+                valor = parseInt(prompt("Introduce un valor: "))
+                console.log(valor)
+                if (i == 0){
+                    valores.push(valor)
+                } else {
+                    if (valor > valores[i-1]){
+                        valores.push(valor)
+                    } else {
+                        sw = 1
+                    }
+                }
+                i++
+            }
+            return valores.length
+        }
+
+        function main(){
+            document.write("Ha introducido -> ", proceso(), " valores")
+        }
+
+        main()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
