@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29 abril</title>
+    <script>
+        let mat_sueldos = [
+            ["Pepe", 800, 2300, 1900],
+            ["Ana", 1500, 4000],
+            ["Manuel", 900, 3200, 5000]
+        ]
+
+        function calcularMayorMedia(mat){
+            let mayor_media = 0
+            let nombe
+            for (let i = 0; i < mat.length; i++){
+                let suma = 0
+                for (let a = 1; a < mat[i].length; a++){
+                    suma += parseInt(mat[i][a])
+                }
+                let media = suma / (mat[i].length - 1)
+                if (media > mayor_media){
+                    mayor_media = media
+                    nombre = mat[i][0]
+                }
+            }
+            return [nombre, mayor_media]
+
+        }
+
+        function main(dato){
+            document.write(dato)
+        }
+        
+        main(calcularMayorMedia(mat_sueldos)[0] + " tiene la mayor media -> " + calcularMayorMedia(mat_sueldos)[1])
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 de mayo</title>
+    <script>
+        // Javascript con JSON
+        const productoJSON = '{"id": 101, "nombre": "Monitor 4K", "disponible": true, "precio": 350.50}';
+        const productoConvertido = JSON.parse(productoJSON);
+
+        document.write("Con JSON: " + productoConvertido.nombre + "<br>");
+
+        // Javascript con objetos
+        const cocheJS = {
+            marca: 'Toyota',
+            modelo: 'Corolla',
+            año: 2024,
+            encender: function() {
+                return "El motor está en marcha";
+            },
+            propietario: undefined
+        };
+
+        document.write("Con objetos javascript: " + cocheJS.encender());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
