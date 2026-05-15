@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+    <h3 id="resultado"></h3>
+    <form name="form1" action="#">
+            <input type="number" name="numero" id="numero">
+            
+            <input type="button" value="Enviar" onclick="Proceso()">
+    </form>
+ 
+
+<script>
+    /*18.-) (repaso) Dado un número, obtener la suma de los valores de los valores inferiores hasta el 1. por ejemplo, para el valor 7, sería: 6+5+4+3+2+1 = 21 */
+   
+   
+
+
+    function Proceso (){
+        
+       var num=parseInt(document.getElementById("numero").value);
+        
+        var suma=0;
+        var i=num-1;
+        while (i >= 1){    
+
+            suma += i;          
+            i -= 1;
+        }
+        Visualizar (suma);
+     
+    }
+
+
+   function Visualizar (dato){
+    
+     document.getElementById("resultado").innerHTML=dato;
+  
+}
+   
+
+</script>
+
+
+
+
+</body>
+
+</html>

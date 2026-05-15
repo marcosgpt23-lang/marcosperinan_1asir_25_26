@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+    /*4.-) Se declara un objeto con los contagios que ha habido en distintas localidades:
+ “Chiclana” : 130, “Conil” : 220, “San Fernando” : 300
+ Visualizar el total de contagios*/
+   var objeto = {'Chiclana':130, 'Conil': 220, 'SanFernado':300}
+        
+
+   
+   
+
+    // -------- FUNCIONES -------------
+ 
+
+    function Visualizar1 (obj){
+        for (var ciudad in obj){
+          document.write("En "+ciudad+" hay "+obj[ciudad]+"<br>")
+        }
+          
+    }
+    function Visualizar2 (obj){
+        
+          document.write(obj['Chiclana']+"<br>");
+          document.write(obj.Chiclana+"<br>");
+          document.write(obj['Conil']+"<br>");
+          document.write(obj.Conil+"<br>");
+          document.write(obj['SanFernado']+"<br>");
+          document.write(obj.SanFernado+"<br>");
+        
+          
+    }
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    Visualizar1 (objeto);
+     Visualizar2 (objeto);  // otra forma de visualizar los valores
+     
+
+</script>
+
+
+
+
+</body>
+
+</html>

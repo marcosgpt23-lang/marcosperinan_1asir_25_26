@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+    /*5.-) Declarar un objeto con los siguientes datos de un alumno: nombre, nota 1eval, nota 2eval y nota 3eval.
+Visualizar la media de sus tres notas.*/
+var objeto_alumno = {'nombre':"Luis", 'nota_eval1': 7, 'nota_eval2': 6, 'nota_eval3': 8 }
+        
+
+   
+   
+
+    // -------- FUNCIONES -------------
+ 
+
+    function Proceso (obj){
+        var suma = obj.nota_eval1 + obj.nota_eval2 +obj.nota_eval3;
+        var suma = obj['nota_eval1'] + obj['nota_eval2'] +obj['nota_eval3'];// es lo mismo
+
+
+        var media = suma / 3;
+        return media;
+          
+    }
+    function Visualizar (obj, dato){
+        document.write(obj.nombre+" tiene "+dato+" de media <br>");
+          document.write(obj['nombre']+" tiene "+dato+" de media");
+
+        
+          
+    }
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    
+     resul = Proceso (objeto_alumno);  
+     Visualizar (objeto_alumno, resul);
+     
+
+</script>
+
+
+
+
+</body>
+
+</html>

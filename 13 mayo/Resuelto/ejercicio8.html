@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+    /*8.-) Declarar un array o lista unidimensional como por ejemplo:
+tab_numeros =(3, -6, 4, -8, 2, 1, 9). Pasar a otro solo los negativos. Visualizar el segundo. */
+   var lista = [3, -6, 4, -8, 2, 1, 9];
+   
+   
+
+    // -------- FUNCIONES -------------
+    function Proceso (vector){
+       var lista_negativos=[];
+        var conta=0;
+        for (i=0 ; i <vector.length; i++){
+            if (vector[i] < 0){
+                lista_negativos[conta] = vector[i];
+                conta++;
+            }
+            
+        }
+        return lista_negativos;
+    }
+
+    function Visualizar (lista){
+       for (i=0 ; i <lista.length; i++){
+        document.write(lista[i]+" ");
+       }
+        
+        
+        
+    }
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    var tab2 = Proceso (lista);
+    Visualizar (tab2);
+     
+
+</script>
+
+
+
+
+</body>
+
+</html>

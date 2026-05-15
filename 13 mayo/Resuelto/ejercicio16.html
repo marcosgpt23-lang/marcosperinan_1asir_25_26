@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+    <h3 id="resultado"></h3>
+    <form name="form1" action="#">
+            <input type="text" name="nombre" id="nombre">
+            <input type="button" value="Validar" onclick="Proceso()">
+    </form>
+ 
+
+<script>
+    /*16.-) Declarar un array o lista unidimensional con varios nombres. Dado un nombre en un formulario, visualizar SI o NO está ese nombre en el array o lista. */
+   var lista_nombres = ["Luis","Pedro","Ana","Luisa","Antonio"];
+   
+   
+
+
+    function Proceso (){
+        sw = "no";
+       var nombre=document.getElementById("nombre").value;
+      for (i=0; i < lista_nombres.length; i++){
+            if (nombre == lista_nombres[i]) {
+                sw = "si";
+            }
+      }
+      Visualizar (sw);
+     
+    }
+
+
+   function Visualizar (dato){
+    if (dato == "si"){
+     document.getElementById("resultado").innerHTML="ese nombre SI está en la lista";
+    } else {
+        document.getElementById("resultado").innerHTML="ese nombre NO está en la lista";
+    }
+}
+   
+
+</script>
+
+
+
+
+</body>
+
+</html>

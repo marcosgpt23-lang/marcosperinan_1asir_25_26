@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+    /*13.-) Declarar una lista o arrays bidimensional, con varias sublistas que contenga valores numéricos enteros. Visualizar la suma de los valores de cada sublista, por ejemplo:
+lista : (1,1,2,3,4), (2,2,2),(3,3,3),(4,4,4)
+La solución es: 11 (primera sublista), 6 (segunda sublista) , 9 y 12. */
+   var lista = [
+         [1,1,2,3,4],
+         [2,2,2],
+         [3,3,3],
+         [4,4,4]
+        ];
+
+   
+   
+
+    // -------- FUNCIONES -------------
+   
+
+    function Visualizar (vector){
+        for (i=0; i< vector.length; i++){
+          var suma=0;
+          for (k=0; k< vector[i].length; k++){
+             suma += vector[i][k];
+           }
+           document.write("<br>total de la sublista "+i+": "+suma);
+        }       
+    }
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    Visualizar (lista);
+     
+
+</script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+    /*9.-) Declarar un array o lista unidimensional como: tab_numeros =(3, 6, 4, 8, 2, 1, 9). Pasar los valores pares a un array1 o lista1 y los valores impares a otro array2 o lista2. Visualizar ambos arrays o listas. */
+   var lista = [3, 6, 4, 8, 2, 1, 9];
+   
+   
+
+    // -------- FUNCIONES -------------
+    function PasarPares (vector){
+       var lista_pares=[];
+        var  conta=0;
+        for (i=0 ; i <vector.length; i++){
+            if (vector[i] % 2 == 0){
+                lista_pares[conta] = vector[i];
+                conta++;
+            }
+            
+        }
+        return lista_pares;
+    }
+    function PasarImpares (vector){
+       var lista_impares=[];
+        var conta=0;
+        for (i=0 ; i <vector.length; i++){
+            if (vector[i] % 2 != 0){
+                lista_impares[conta] = vector[i];
+                conta++;
+            }
+            
+        }
+        return lista_impares;
+    }
+
+    function Visualizar (mensaje, lista){
+        document.write("<br>"+mensaje);
+       for (i=0 ; i <lista.length; i++){
+        document.write(lista[i]+" ");
+       }
+        
+        
+        
+    }
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    var lista1 = PasarPares (lista);
+    var lista2 = PasarImpares (lista);
+    Visualizar ("Lista de valores pares: ", lista1);
+    Visualizar ("Lista de valores impares: ", lista2);
+     
+
+</script>
+
+
+
+
+</body>
+
+</html>

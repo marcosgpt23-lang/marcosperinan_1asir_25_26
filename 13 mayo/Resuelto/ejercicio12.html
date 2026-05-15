@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+    /*12.-) Se declara un objeto con los contagios que ha habido en distintas localidades: “Chiclana” : 130, “Conil” : 220, “San Fernando” : 300
+Obtener la suma de los contagios de las tres ciudades (130+220+300)*/
+   var objeto = {'Chiclana':130, 'Conil': 220, 'SanFernando':300}
+        
+
+   
+   
+
+    // -------- FUNCIONES -------------
+ 
+
+    function Proceso (obj){
+         var suma=0;
+        for (var ciudad in obj){
+          suma += obj[ciudad];
+          
+        }
+        // otra forma de calcularlo
+        suma = obj['Chiclana']+obj['Conil']+obj['SanFernando'];
+        return suma;
+          
+    }
+   
+     function Visualizar (dato){
+        document.write("Hay "+dato+" total de contagios");
+
+     
+        
+          
+    }
+          
+    
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    var resul = Proceso (objeto);
+    Visualizar (resul);
+    
+     
+
+</script>
+
+
+
+
+</body>
+
+</html>

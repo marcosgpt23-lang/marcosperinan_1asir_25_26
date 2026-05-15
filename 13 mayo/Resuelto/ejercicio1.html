@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+    /*1.-) Dado un array tab1, pasar a otro array tab2 todos los valores de tab1 pero en orden inverso, es decir:
+tab1=(2,44,5,6,7,8,9) —> tab2 queda con: 9,8,7,6,5,44,2
+Visualizar tab2. */
+   var lista = [2,44,5,6,7,8,9];
+   
+   
+
+    // -------- FUNCIONES -------------
+    function Proceso (vector){
+        var tab2=[];
+        var conta=0;
+        for (i=vector.length-1; i >=0; i--){
+            tab2[conta] = vector[i];
+            conta += 1;
+        }
+        return tab2;
+    }
+
+    function Visualizar (vector){
+        for (i=0; i< vector.length; i++){
+          document.write(vector[i]+" ")
+        }
+        
+        
+    }
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    var tab2 = Proceso (lista);
+    Visualizar (tab2);
+     
+
+</script>
+
+
+
+
+</body>
+
+</html>

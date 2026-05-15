@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+    /*7.-) Declarar un objeto con los precios de varios productos,  por ejemplo: 
+    “disco_duro”:95 euros, “ordenador”:600 euros, “monitor”: 250 euros
+Visualizar los productos con precios mayores de 100 euros.*/
+var objeto_precios = {'disco_duro':95, 'ordenador':600, 'monitor': 250}
+      
+    // -------- FUNCIONES -------------
+ 
+    function Visualizar (obj){
+      document.write("Productos con precio mayores de 100 euros <br>")
+       for (nombre_producto in objeto_precios){
+          if (objeto_precios[nombre_producto ] > 100){
+          document.write(nombre_producto+" vale "+objeto_precios[nombre_producto]+"<br>");
+          }
+       }
+
+        
+          
+    }
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+ 
+     Visualizar (objeto_precios);
+     
+
+</script>
+
+
+
+
+</body>
+
+</html>

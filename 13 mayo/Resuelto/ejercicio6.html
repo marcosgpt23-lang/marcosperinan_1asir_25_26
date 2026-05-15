@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+    /*6.-) Declarar un array unidimensional como: tab_numeros =array(3, 6, 4, 8, 2, 1, 9). Visualizar si o no son todos positivos (utilizar switch). */
+   var lista = [3, 6, 4, 8, 2, 1, 9];
+   
+   
+
+    // -------- FUNCIONES -------------
+    function Proceso (vector){
+       
+        var sw = "si";
+        for (i=0 ; i <vector.length; i++){
+            if (vector[i] < 0){
+                sw = "no";
+            }
+            
+        }
+        return sw;
+    }
+
+    function Visualizar (dato){
+        if (dato == "si"){
+            document.write("TODOS SON POSITIVOS");
+        }
+            else{
+              document.write("NO SON TODOS POSITIVOS");   
+            }
+        
+        
+        
+    }
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    var tab2 = Proceso (lista);
+    Visualizar (tab2);
+     
+
+</script>
+
+
+
+
+</body>
+
+</html>

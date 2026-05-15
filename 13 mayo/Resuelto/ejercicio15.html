@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+    /*15.-) Declarar una lista o arrays bidimensional, con varias sublistas que contenga valores numéricos enteros, por ejemplo:
+lista : (1,1,2,3,4), (2,2,2),(3,3,3),(4,4,4) Visualizar el primero y último de cada sublista. */
+   var lista = [
+         [1,1,2,3,4],
+         [2,2,2],
+         [3,3,3],
+         [4,4,4]
+        ];
+
+   
+   
+
+    // -------- FUNCIONES -------------
+   
+
+    function Visualizar (vector){
+        document.write("Primeros valores de cada sublista: <br>")
+        for (i=0; i< vector.length; i++){
+          document.write(vector[i][0]+"<br>");
+           
+        }       
+    }
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    Visualizar (lista);
+     
+
+</script>
+
+
+
+
+</body>
+
+</html>

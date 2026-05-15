@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+    /*11.-) Se declaran dos arrays, visualizar SI o NO ambos son exactamente iguales, es decir, el primero de uno es igual al primero del otro, el segundo de uno al segundo del otro, y así sucesivamente. */
+   var lista1 = [3, 6, 7, 8, 9, 33];
+   var lista2 = [3, 4, 7, 3, 9, 33];
+   
+   
+
+    // -------- FUNCIONES -------------
+    function Proceso (vector1, vector2){
+      
+        var sw ="si";
+        if (vector1.length != vector2.length){
+            sw = "no";
+        } else {
+        for (var i=0 ; i < vector1.length; i++){
+            if (vector1[i] != vector2[i]){
+                sw = "no";
+            }
+            
+        }
+      }
+    
+        return sw;
+    }
+
+    function Visualizar (dato){
+       if (dato == "si"){
+            document.write("ambas listas SI son iguales");
+       } else{
+        document.write("ambas listas NO son iguales");
+       }
+            
+    }
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    var flag = Proceso (lista1, lista2);
+
+    Visualizar (flag);
+    
+     
+
+</script>
+
+
+
+
+</body>
+
+</html>

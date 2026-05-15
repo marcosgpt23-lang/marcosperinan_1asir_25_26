@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+    /*14.-) Declarar un array o lista unidimensional como por ejemplo:
+tab_numeros =(3, -6, 0, -8, 0, 1, 9). Se pide: cuantos ceros hay en el array o lista. */
+   var lista = [3, -6, 0, -8, 0, 1, 9];
+   
+   
+
+    // -------- FUNCIONES -------------
+    function Proceso (vector){
+       
+        var conta=0;
+        for (i=0 ; i <vector.length; i++){
+            if (vector[i] == 0){
+                conta += 1;
+            }
+            
+        }
+        return conta;
+    }
+
+    function Visualizar (dato){
+       document.write("Hay "+dato+" ceros hay en la lista")
+        
+        
+        
+    }
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    var resul = Proceso (lista);
+    Visualizar (resul);
+     
+
+</script>
+
+
+
+
+</body>
+
+</html>

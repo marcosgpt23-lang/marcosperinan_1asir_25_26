@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Ejemplo de JavaScript</title>
+
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+
+<script>
+    /*3.-) Dados tres arrays o listas, lista1, lista2 y lista3 con valores numéricos:
+    -->guardar en el primer elemento de un  array o lista BIDIMENSIONAL mat el primer array o lista. 
+    -->guardar en el segundo elemento de un  array o lista BIDIMENSIONAL mat el segundo array o lista.
+     -->guardar en el tercer elemento de un  array o lista BIDIMENSIONAL mat el tercer array o lista
+     --> Visualizar el array o lista BIDIMENSIONAL*/
+   var lista1 =  [1,2,3,4,5];
+    var lista2 = [6,7,8,9,10,11,12];
+   var lista3 = [13,14,15];
+        
+
+   
+   
+
+    // -------- FUNCIONES -------------
+    function Proceso (vector1, vector2, vector3){
+        var mat =[];
+        mat[0] = vector1;
+        mat[1] = vector2;
+        mat[2] = vector3;
+        return mat;
+    }
+
+    function Visualizar (vector){
+        for (i=0; i< vector.length; i++){
+          for (k=0; k< vector[i].length; k++){
+             document.write(vector[i][k]+" ");
+           }
+           document.write("<br>");
+        }       
+    }
+
+    // --------- PROGRAMA PRINCIPAL -----------------
+    mat = Proceso (lista1, lista2, lista3);
+    Visualizar (mat);
+     
+
+</script>
+
+
+
+
+</body>
+
+</html>
