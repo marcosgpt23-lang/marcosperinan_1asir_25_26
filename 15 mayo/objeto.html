@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+<script>
+    /*Dado un nombre de alumno y nota, almacenarlo en un objeto y visualizarlo*/
+    let nombreAlumno = "Marcos"
+    let notaAlumno = 4
+
+    let alumno = {
+        nombre: nombreAlumno,
+        nota: notaAlumno
+    }
+
+    function main(){
+        if (alumno.nota > 5){
+            document.write("El alumno está aprobado: ", alumno.nota)
+        }
+        else {
+            document.write("El alumno está suspenso: ", alumno.nota)
+        }
+    }
+
+    main()
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+    <form action="#">
+        <span>Guardar alumnos</span><br>
+        <span>Nombre: </span><input type="text" id="nombreAlumno">
+        <br>
+        <span>Nota: </span><input type="text" id="notaAlumno">
+        <button onclick="guardarAlumno()">Guardar</button>
+    </form>
+    <span id="alumnos"></span>
+<script>
+    /*Guardar el nombre y la nota de varios alumnos (hacer un array de objetos) cada vez que se pulse el botón. Visualizar el número total de alumnos almacenados*/
+    let alumnos = []
+    function guardarAlumno(){
+        let alumno = {
+            nombre: document.getElementById("nombreAlumno").value,
+            nota: parseFloat(document.getElementById("notaAlumno").value)
+        }
+        alumnos.push(alumno)
+        document.getElementById("nombreAlumno").value = ""
+        document.getElementById("notaAlumno").value = ""
+        mostrarCantidad()
+    }
+
+    function mostrarCantidad(){
+        document.getElementById("alumnos").innerHTML = alumnos.length
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+    <form action="#">
+        <input type="text" id="n1">+<input type="text" id="n2">+<input type="text" id="n3">+<input type="text" id="n4">+<input type="text" id="n5">+<input type="text" id="n6">+<input type="text" id="n7">+<input type="text" id="n8">
+        <button type="submit" onclick="main()">Sumar</button>
+    </form>
+    <span id="resultado"></span>
+    
+<script>
+    /*Pedir 2 números en un formulario y visualizar su suma*/
+    function main(){
+        let suma = 0
+        for (let i = 1; i <= document.getElementsByTagName("input").length; i++){
+            suma += parseFloat(document.getElementById("n" + i).value) 
+        }
+        document.getElementById("resultado").innerHTML = suma
+    }
+</script>
+</body>
+</html>

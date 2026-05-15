@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+<script>
+    /*Declarar un array de varios elementos
+    en el que cada uno de ellos es a su vez un array:
+    Por cada subarray visualizar el primero y el último*/
+    let mat = [
+        [1, 2, 3, 4, 5],
+        [6, 7, 8, 9, 10],
+        [11, 12, 13, 14, 15]
+    ]
+
+    function visualizar_subarray(array){
+        for (let i = 0; i <= array.length; i++){
+            document.write("Subarray ", i, "<br>Primer valor ->", array[i][0], "<br>Último valor -> ", array[i][array[i].length - 1], "<br><br>")
+        }
+    }
+
+    visualizar_subarray(mat)
+</script>
+</body>
+</html>
